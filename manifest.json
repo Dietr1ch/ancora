@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+
+	"name": "Ancora",
+	"version": "1.0",
+
+	"description": "Adds anchors to make linking easier.",
+
+	"icons": {
+		"48": "icons/border-48.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.mozilla.org/*"],
+			"js": ["ancora.js"]
+		}
+	]
+}
+
